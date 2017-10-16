@@ -1,20 +1,9 @@
-"""
-Services
+"""Services
 
 Services available to nodes can be put in this directory.  Everything listed in
 __all__ is automatically loaded by the main core module.
 """
-import os
+#__all__ = ["quagga", "nrl", "xorp", "bird", "utility", "security", "ucarp", "dockersvc", 'startup', "telnet", "dhcp-relay", "gre", "proxy"]
 
-from core.service import ServiceManager
+__all__ = ["quagga", "utility", "security", 'startup', "telnet", "dhcp-relay", "gre", "proxy"]
 
-_PATH = os.path.abspath(os.path.dirname(__file__))
-
-
-def load():
-    """
-    Loads all services from the modules that reside under core.services.
-
-    :return: nothing
-    """
-    ServiceManager.add_services(_PATH)
