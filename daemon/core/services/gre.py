@@ -27,5 +27,4 @@ class GreService(CoreService):
         cfg += "/sbin/sysctl -w net.ipv4.conf.all.forwarding=1\n"
         return cfg
     
-addservice(GreService)
 

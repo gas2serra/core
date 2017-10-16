@@ -20,5 +20,4 @@ class ProxyService(CoreService):
         cfg += "/etc/init.d/squid3 start\n"
         return cfg
 
-addservice(ProxyService)
 

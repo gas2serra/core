@@ -20,5 +20,4 @@ class DHCPRelayService(CoreService):
         cfg += "/usr/sbin/dhcrelay\n"
         return cfg
 
-addservice(DHCPRelayService)
 

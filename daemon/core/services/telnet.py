@@ -23,5 +23,4 @@ class TelnetService(CoreService):
         cfg += "/usr/sbin/inetd /etc/inetd.conf\n"
         return cfg
 
-addservice(TelnetService)
 
