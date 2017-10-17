@@ -19,8 +19,8 @@ class DHCPRelayService(CoreService):
     @classmethod
     def generateconfig(cls, node, filename, services):
         cfg = "#!/bin/sh\n"
-        cfg += "#/usr/sbin/dhcrelay 192.168.1.10\n"
-        cfg += "/usr/sbin/dhcrelay\n"
+        cfg += "#/usr/sbin/dhcrelay <dhcp server>\n"
+        cfg += "\n"
         return cfg
 
 
