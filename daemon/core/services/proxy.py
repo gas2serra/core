@@ -10,8 +10,8 @@ class ProxyService(CoreService):
     _name = "Proxy"
     _group = "SIR"
     _depends = ()
-    _dirs = ("/var/log/squid3",)
-    _configs = ('proxy.sh',"/var/log/squid3/squid.conf","/var/log/squid3/msntauth.conf","/var/log/squid3/errorpage.css",)
+    _dirs = ("/var/log/squid3","/etc/squid3")
+    _configs = ('proxy.sh',"/etc/squid3/squid.conf","/etc/squid3/msntauth.conf","/etc/squid3/errorpage.css",)
     _startindex = 50
     _startup = ('sh proxy.sh',)
     _shutdown = ()
