@@ -567,6 +567,8 @@ proc popupBuildHostsFile { } {
         set wi .buildhostsdialog
 	set hosts [string trim [$wi.mid.hosts get 0.0 end]]
 	set filename [$wi.fil.filename get]
+        exec /bin/sh -c "cat /etc/hosts | sed '/### begin CORE/,$ d' > /tmp/hosts"
+        exec /bin/sh -c "cp /tmp/hosts /etc/hosts"
 	set fileId [open $filename a]
         puts $fileId $hosts
 	close $fileId
