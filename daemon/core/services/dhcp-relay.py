@@ -17,7 +17,7 @@ class DHCPRelayService(CoreService):
     shutdown = ()
 
     @classmethod
-    def generate_config(cls, node, filename, services):
+    def generate_config(cls, node, filename):
         cfg = "#!/bin/sh\n"
         cfg += "#/usr/sbin/dhcrelay <dhcp server>\n"
         cfg += "\n"

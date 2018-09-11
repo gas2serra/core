@@ -17,7 +17,7 @@ class ProxyService(CoreService):
     shutdown = ()
 
     @classmethod
-    def generate_config(cls, node, filename, services):
+    def generate_config(cls, node, filename):
         cfg = "#!/bin/sh\n"
         cfg += "# auto-generated \n"
         if filename == cls.configs[0]:

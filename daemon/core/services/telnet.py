@@ -17,7 +17,7 @@ class TelnetService(CoreService):
     shutdown = ()
 
     @classmethod
-    def generate_config(cls, node, filename, services):
+    def generate_config(cls, node, filename):
         ''' Return a string that will be written to filename, or sent to the
             GUI for user customization.
         '''

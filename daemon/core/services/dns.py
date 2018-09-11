@@ -17,7 +17,7 @@ class DnsService(CoreService):
     shutdown = ()
 
     @classmethod
-    def generate_config(cls, node, filename, services):
+    def generate_config(cls, node, filename):
         cfg = ""
         if filename == cls.configs[0]:
             cfg = "#!/bin/sh\n"
